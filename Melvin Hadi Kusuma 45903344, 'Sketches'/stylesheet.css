@@ -1,0 +1,240 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
+a:link, a:visited {
+color: black;
+text-decoration: none;
+}
+
+a:hover {
+color: #ababba;
+text-decoration: none;
+transition: 0.2s ease;
+}
+
+a:active {
+color: black;
+text-decoration: none;
+}
+
+img {vertical-align: middle;}
+
+body {
+
+	font-family: Trebuchet MS;
+	margin-top: -5px;
+	
+}
+
+/* TITLE */
+
+h1 {
+	background: #111113;
+	padding-top: 25px;
+	margin-top: 2px;
+	margin-bottom: -35px;
+	margin-left: -8px;
+	margin-right: -8px;
+	text-align: center;
+	font-size: 400%;
+	letter-spacing: 3px;
+	color: white;
+}
+
+/* AUTHOR */
+
+h2 {
+	background: #23232B;
+	padding-bottom: 2px;
+	padding-left: 440px;
+	margin-left: -8px;
+	margin-right: -8px;
+	font-family: Lucida Sans Unicode;
+	text-align: center;
+	font-size: 115%;
+	color: white;
+}
+
+/* STUDENT ID */
+
+h3 {
+	margin-top: -43px;
+	margin-left: 0px;
+	font-size: 110%;
+	color: #6f6f89;
+}
+
+
+/* NAVBAR */
+
+.buttons {
+margin-top: -5;
+background: white;
+word-spacing: 69px;
+text-align: center;
+z-index: 1;
+}
+
+p.head {
+	margin-top: 50px;
+	margin-bottom: -10px;
+	margin-left: 200px;
+	margin-right: 200px;
+	font-size: 350%;
+}
+
+p.subhead {
+	margin-bottom: -10px;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-size: 150%;
+}
+
+p.intro {
+	margin-left: 400px;
+	margin-right: 400px;
+	font-size: 110%;
+}
+
+p.para {
+	margin-left: 200px;
+	margin-right: 200px;
+	font-size: 110%;
+}
+
+.caption {
+	text-align: center;
+	color: gray;
+}
+
+table, th, td {
+	border: 1px solid lightgray;
+}
+
+table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+th {
+	font-size: 110%;
+	text-align: left;
+}
+
+th, td {
+	padding: 15px;
+}
+
+.social {
+	font-size: 100%;
+	margin-left: 205px;
+}
+
+ul {
+	font-size: 110%;
+	margin-left: 200px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	color: gray;
+	background: #23232B;
+	padding: 80px;
+	margin-left: -8px;
+	width: 100%;
+}
+	/* SLIDESHOW CSS referenced from link before*/
+
+	* {box-sizing: border-box} margin:0}
+	.mySlides {display: none}
+
+	.slideshow-container {
+	  padding-top: 20px;
+	  max-width: 1000px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 14px;
+	  margin-top: -22px;
+	  color: black;
+	  font-size: 18px;
+	  transition: 0.4s ease;
+	  user-select: none;
+	}
+
+	.next {
+	  right: 0;
+	}
+
+	.prev:hover, .next:hover {
+	  color: #ababba;
+	}
+
+	.text {
+	  color: black;
+	  font-size: 15px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: -75px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	.dot {
+	  cursor: pointer;
+	  height: 8px;
+	  width: 8px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+	  background-color: #717171;
+	}
+
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+
+	@media only screen and (max-width: 300px) {
+	  .prev, .next,.text {font-size: 11px}
+	}
+
+.twitter-timeline {
+	margin-right: 50px;
+}
+
+	/* FIXED HEADER **BUGGED**
+
+	.sticky {
+	position: fixed;
+	bottom: 687px;
+	top: -9;
+	width: 99%;
+	} */
+	
