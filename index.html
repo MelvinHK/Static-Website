@@ -1,0 +1,283 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css">
+		<title>Digital Drawings | Home</title>
+	</head>
+	<body>
+		<header>
+			<h1 id="top"><a href="index.html"><img src="images/logo.png" alt="Logo" title="Home" width="100px"
+			style="margin-top: -10px;"></a>
+			Digital Drawings</h1>
+			<h2 title="Website created by Melvin Hadi Kusuma"><i>
+			Melvin Hadi Kusuma</i></h2>
+			<h3>
+			Student ID: 45903344</h3>
+			
+			<div class="buttons" id="buttonsHeader">
+				<h4>
+				<a href="index.html">Home</a>
+				<a href="mypage1.html">Gallery</a>
+				<a href="index.html#equip">Equipment</a> 
+				<a href="index.html#social">Social Media</a>
+				<a href="mypage2.html">About</a>
+				
+				<!-- Fixed Header **BUGGED**
+				
+				Script referenced from https://www.w3schools.com/howto/howto_js_sticky_header.asp 
+				<script>
+				window.onscroll = function() {myFunction()};
+					var buttons = document.getElementById("buttonsHeader");
+					var sticky = buttons.offsetTop;
+					function myFunction() {
+					if (window.pageYOffset > sticky) {
+						buttons.classList.add("sticky");
+					} else {
+					buttons.classList.remove("sticky");
+					}
+				}
+				</script>-->
+				
+				<hr>
+				
+				</h4>
+			</div>	
+		</header>
+
+		<center>
+		<p class="head">Hello!</p>
+		
+			<p class="intro">
+			My name is Melvin. On this site you'll find a small digital collection of some drawings that I've created
+			via my graphics tablet.
+			
+			<br><br>
+			
+			<a href="mypage2.html" style="color:blue;"><i>More about this site</i></a>
+			
+			<br>
+			
+			</p>
+		</center>
+			
+		<center>
+		<p class="head">Gallery</p>
+		
+			<p class="para">
+			Below is a small preview of my gallery.
+			Click <a href="mypage1.html" style="color:blue;"><i>here</i></a> to view the full gallery!
+			</p>
+		</center>
+			
+			<!-- HTML referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+			<div class="slideshow-container">
+				
+				<!-- All drawing images are sourced from my personal Twitter Account https://twitter.com/Hi_Im_Melvin -->
+				<div class="mySlides fade">
+				  <center><img src="https://pbs.twimg.com/media/DwJnKdlVAAEUJfI.jpg" style="width:50%"><center>
+				  <div class="text">"Monosplit"</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <center><img src="https://pbs.twimg.com/media/Dxa89epVsAAYdFw.jpg" style="width:60%"><center>
+				  <div class="text">"Stripes"</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <center><img src="https://pbs.twimg.com/media/Dz13fZ9UwAAy0g6.jpg" style="width:60%"><center>
+				  <div class="text">"Bolt"</div>
+				</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<br><br>
+		
+		<!-- Slideshow
+		Script referenced from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+		<script>
+		
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+
+			
+			<center><p class="para" style="margin-top:10px;">______</p></center>
+			
+		<p class="subhead" id="equip">Drawing Equipment</p>
+		
+			<p class="para">
+			The graphics tablets that I use are from the company, 
+			<a href="https://www.wacom.com/en-us" target="_blank" style="color:blue;"><i>Wacom.</i></a>
+			The first model I recieved was an <b>Intuos CTH-480</b>, a standard graphics tablet suitable for 
+			beginners like myself at the time.
+			
+			<br><br>
+			
+			After completing highschool, I was generously given a <b>Cintiq Pro 13HD</b>, a graphics
+			tablet with a "pen-on screen experience".
+			
+			<br><br>
+			
+			Anyhow, here's a full list of software and hardware I currently use when drawing:
+			
+			<br>
+			
+			</p>
+			
+			<ul class="list">
+				<li>Cintiq Pro 13HD</li>
+				<li>Acer Predator Helios 300 G3-571</li>
+				<li>Adobe Photoshop CC 2018</li>
+				<li>OBS Studio</li>
+			</ul>
+			
+			<p class="para">
+			Some pricing and additional information:
+			</p>
+			
+			<br>
+			
+			<table align="center" border="1">
+				<th>Product</th>
+				<th>Cost</th>
+				<th>Pros</th>
+				<th>Cons</th>
+			</tr>
+			<tr>
+				<td><a href="https://www.wacom.com/en-us//products/pen-displays/wacom-cintiq-pro-13" target="_blank" style="color:blue;">
+				Pro 13HD</a></td>
+				<td>$1,399.00</td>
+				<td>4k Display settings<br><br>
+				Direct drawing onto screen<br><br>
+				Easy setup than other screen tablets<br><br>
+				Pen does not require batteries/recharging</td>
+				<td>Difficult portability</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.acer.com/ac/en/US/content/predator-model/NH.Q28AA.005" target="_blank" style="color:blue;">
+				G3-571</a></td>
+				<td>$1,412.69</td>
+				<td>4k Display<br><br>
+				Fast and powerful performance<br><br>
+				Large RAM storage allows efficient use of multiple apps at once</td>
+				<td>High GPU settings may cause overheating over prolonged use</td>
+			</tr>
+			<tr>
+				<td><a href="https://www.adobe.com/au/products/photoshop/pricing-info.html?gclid=Cj0KCQjwkIzlBRDzARIsABgXqV-2Uq_1D1cTe67nvc1fOozYVYqUJULcr9Y_sYdl1hMDw1vuZbQrWO8aAvEDEALw_wcB&sdid=8WLD55WJ&mv=search&ef_id=Cj0KCQjwkIzlBRDzARIsABgXqV-2Uq_1D1cTe67nvc1fOozYVYqUJULcr9Y_sYdl1hMDw1vuZbQrWO8aAvEDEALw_wcB:G:s&s_kwcid=AL!3085!3!318320143340!!!g!294680686006!" target="_blank" style="color:blue;">
+				CC 2018</a></td>
+				<td>$21.99/mo</td>
+				<td>Wide range of flexible and effective tools<br><br>
+				High quality, customisable brushes</td>
+				<td>Required subscription for use<br><br>
+				Occupies large RAM storage</td>
+			</tr>
+			<tr>
+				<td><a href="https://obsproject.com/" target="_blank" style="color:blue;">
+				OBS Studio</a></td>
+				<td>$0.00</td>
+				<td>Customisable screen recording; screen size, specific windows, etc.<br><br>
+				Free, with no watermarks when recording</td>
+				<td>May encounter bugs when setting up to screen record</td>
+			</tr>
+			</table>
+			
+			<br>
+			
+			<center><p class="para" style="margin-top:10px;">______</p></center>
+			
+		<p class="subhead" id="social">Social Media Accounts</p>
+		
+			<p class="para">
+			Below are social media accounts that I actively use to post my drawings on.
+			<br><br>
+			Timelapses are posted onto my Youtube channel, if I happen to be recording with OBS.
+			
+			<!-- Twitter icon created by https://www.flaticon.com/authors/linh-pham -->
+			
+			<div class="social">
+			<a href="https://twitter.com/kusuma_melvin" target="_blank" style="color:blue;" title="My Twitter">
+			<img src="images/tlogo.png" alt="Twitter Logo" width=40px style="margin-right: 10px;">
+			<i>kusuma_melvin</i></a>
+			
+			<br><br>
+			
+			<!-- Instagram icon sourced from https://tinyurl.com/y4jvezfc (e-oji) -->
+			
+			<a href="https://www.instagram.com/kusuma_melvin" target="_blank" style="color:blue;" title="My Instagram">
+			<img src="images/ilogo2.png" alt="Instagram Logo" width=40px style="margin-right: 10px;">
+			<i>kusuma_melvin</i></a>
+			
+			<br><br>
+			
+			<!-- Youtube icon created by DigitAm https://pngtree.com/digitam_1841392?type=1 -->
+			
+			<a href="https://www.youtube.com/channel/UCcy-i5z9Ejc5tlZgYZElptA" target="_blank" style="color:blue;" title="My Youtube">
+			<img src="images/ytlogo2.png" alt="Youtube Logo" width=38px style="margin-right: 10px;">
+			<i>Mel</i></a>
+			</div>
+			
+			<p class="para">
+			Here's a preview of my twitter timeline:
+			</p>
+			
+			<br><br>
+			
+			<!-- Embedded code referenced from https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview.html -->
+			
+			<center>
+			<a class="twitter-timeline" 
+			href="https://twitter.com/kusuma_melvin?ref_src=twsrc%5Etfw"
+			data-width="500"
+			data-height="0"
+			data-chrome="nofooter noheader noborders"
+			data-tweet-limit="3">
+			</a> 
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</center>
+			
+			<center>
+			<p class="para">Consider following!</p>
+			
+			<br>
+			
+			<p><a href="#top" style="color:blue;"><i>Back to top</i></a></p>
+			</center>
+		
+		<p class="footer">Copyright 2019 lolol</p>
+			
+	</body>
+</html>
